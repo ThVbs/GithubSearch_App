@@ -18,7 +18,6 @@ function GitProfile() {
 
     setLoading(true);
 
-    // Realize a solicitação à API do GitHub para obter o perfil do usuário
     fetch(`https://api.github.com/users/${username}`)
       .then((response) => {
         if (response.status === 404) {
@@ -95,8 +94,8 @@ function GitProfile() {
               )}
             />
             {profileData.login === 'ThVbs' && (
-                  <h1 id="Secret">Criador dessa API </h1>
-                )}
+                <Text id="Secret">Criador dessa API</Text>
+              )}
           </View>
         )}
                 

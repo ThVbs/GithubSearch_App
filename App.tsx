@@ -5,19 +5,38 @@ import { StatusBar } from 'expo-status-bar';
 import Home from './src/screens/Home';
 import Search from './src/screens/Search';
 
-
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <StatusBar
-        backgroundColor='trasnparent'
+        backgroundColor='transparent'
         translucent
       />
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Search" component={Search} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            headerTransparent: true, 
+            headerStyle: {
+              backgroundColor: 'transparent', 
+            },
+            headerTintColor: 'white', 
+          }}
+        />
+        <Stack.Screen
+          name="Search"
+          component={Search}
+          options={{
+            headerTransparent: true, 
+            headerStyle: {
+              backgroundColor: 'transparent', 
+            },
+            headerTintColor: 'white', 
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
