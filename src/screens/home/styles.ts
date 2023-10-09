@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderRadius: 13,
-    backgroundColor: 'rgba(54,54,54, 0.7)',
+    backgroundColor: 'rgba(40,75,89, 0.7)',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 50,
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: 'white',
+    backgroundColor: '#6D96A6',
     width: '60%',
     margin: 20,
     padding: 15,

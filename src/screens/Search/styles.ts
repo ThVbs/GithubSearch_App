@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     alignSelf: 'center',
     alignItems: 'center',
+    fontWeight: 'bold',
   }
 
 });
